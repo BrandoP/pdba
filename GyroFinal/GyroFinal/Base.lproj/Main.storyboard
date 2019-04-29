@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="R3v-uw-wjW">
+    <device id="retina4_0" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="lfD-cR-cPa">
+            <objects>
+                <navigationController id="R3v-uw-wjW" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Qpn-VU-Ztj">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="u7o-6q-57j" kind="relationship" relationship="rootViewController" id="hlh-2Y-QTO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a2U-gi-yko" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1177" y="-834"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" title="Home" modalTransitionStyle="flipHorizontal" modalPresentationStyle="currentContext" hidesBottomBarWhenPushed="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="GyroFinal" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nhN-39-jI5"/>
+                        <viewControllerLayoutGuide type="bottom" id="qtl-fh-1v8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nts-IV-Nhv">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SoulSearching_0000_Layer 1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="47J-39-Hbx">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R1W-aQ-lj4">
+                                <rect key="frame" x="532" y="0.0" width="36" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icons8-about-26.png"/>
+                                <connections>
+                                    <action selector="InfoBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C6P-mH-5KC"/>
+                                </connections>
+                            </button>
+                            <button alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1V-0p-1k6">
+                                <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home" image="icons8-home-filled-50.png"/>
+                                <connections>
+                                    <action selector="HomeBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TB2-aV-7og"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yzv-If-KPt">
+                                <rect key="frame" x="72" y="169" width="164" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="_________________________">
+                                    <color key="titleColor" red="0.057137427314882583" green="0.33600284712042094" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapLinkWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IOQ-v1-2xh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="LinkBtn" destination="yzv-If-KPt" id="Cr0-wa-55K"/>
+                        <outlet property="MainView" destination="47J-39-Hbx" id="DYG-eo-8SR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205.98591549295776" y="-834.375"/>
+        </scene>
+        <!--Instruction-->
+        <scene sceneID="tnT-wb-6Sw">
+            <objects>
+                <viewController storyboardIdentifier="imageGallery" title="Instruction" modalTransitionStyle="flipHorizontal" id="u7o-6q-57j" customClass="ViewController" customModule="GyroFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Rw-MM-s1B"/>
+                        <viewControllerLayoutGuide type="bottom" id="Eop-E5-A75"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OOU-qo-2J7">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="01-instructions.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="yRy-Eg-8ZF">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Yf-u4-O8g">
+                                <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home" image="icons8-home-filled-50.png"/>
+                                <connections>
+                                    <action selector="HomeBtn:" destination="u7o-6q-57j" eventType="touchUpInside" id="chB-KV-rn0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLG-6J-HLW">
+                                <rect key="frame" x="538" y="3" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icons8_close_button_filled_50.png"/>
+                                <connections>
+                                    <action selector="HomeBtn:" destination="u7o-6q-57j" eventType="touchUpInside" id="Z3T-q4-oxv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Ode-f0-Muk"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="imageView" destination="yRy-Eg-8ZF" id="lIe-NG-OZ0"/>
+                        <segue destination="BYZ-38-t0r" kind="show" id="cv3-3Z-7NM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OkO-eE-9mF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-486.97183098591552" y="-834.375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="01-instructions.jpg" width="667" height="375"/>
+        <image name="SoulSearching_0000_Layer 1.jpg" width="667" height="375"/>
+        <image name="icons8-about-26.png" width="26" height="26"/>
+        <image name="icons8-home-filled-50.png" width="50" height="50"/>
+        <image name="icons8_close_button_filled_50.png" width="50" height="50"/>
+    </resources>
+</document>
